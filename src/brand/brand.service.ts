@@ -10,47 +10,7 @@ export class BrandService {
   private brands: Brand[];
 
   constructor() {
-    this.brands = [{
-      id: uuid(),
-      name: 'Volkswagen',
-      createdAt: new Date(),
-      updatedAt: new Date()
-    },{
-      id: uuid(),
-      name: 'Ford',
-      createdAt: new Date(),
-      updatedAt: new Date()
-    },{
-      id: uuid(),
-      name: 'Toyota',
-      createdAt: new Date(),
-      updatedAt: new Date()
-    },{
-      id: uuid(),
-      name: 'Honda',
-      createdAt: new Date(),
-      updatedAt: new Date()
-    },{
-      id: uuid(),
-      name: 'Nissan',
-      createdAt: new Date(),
-      updatedAt: new Date()
-    },{
-      id: uuid(),
-      name: 'Hyundai',
-      createdAt: new Date(),
-      updatedAt: new Date()
-    },{
-      id: uuid(),
-      name: 'Chevrolet',
-      createdAt: new Date(),
-      updatedAt: new Date()
-    },{
-      id: uuid(),
-      name: 'Kia',
-      createdAt: new Date(),
-      updatedAt: new Date()
-    }]
+    this.brands = [];
   }
 
   create(createBrandDto: CreateBrandDto): CreateBrandDto {
