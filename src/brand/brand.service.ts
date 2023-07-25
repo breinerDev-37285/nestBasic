@@ -91,4 +91,8 @@ export class BrandService {
     return brand;
   }
 
+  set brandsData(brands: Brand[]) {
+    this.brands = brands;
+  }
+  
 }

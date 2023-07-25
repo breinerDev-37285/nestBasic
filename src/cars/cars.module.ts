@@ -4,6 +4,7 @@ import CarsController from '@cars/cars.controller';
 
 @Module({
   controllers: [CarsController],
-  providers: [CarsService]
+  providers: [CarsService],
+  exports: [CarsService],
 })
 export default class CarsModule {}

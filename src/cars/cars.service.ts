@@ -9,23 +9,7 @@ export class CarsService {
     public cars: Car[];
 
     constructor() {
-        this.cars = [
-            {
-                "id": uuid(),
-                "brand": "Toyota",
-                "model": "Corolla"
-            },
-            {
-                "id": uuid(),
-                "brand": "Honda",
-                "model": "Civic"
-            },
-            {
-                "id": uuid(),
-                "brand": "Jeep",
-                "model": "Cherokee"
-            }
-        ];
+        this.cars = [];	
     }
 
     findAllCars() {
@@ -57,4 +41,8 @@ export class CarsService {
         this.cars = this.cars.filter( car => car.id !== id );
         return carDB;
     } 
+
+    set carsData( cars: Car[] ) {
+        this.cars = cars;
+    }
 }
